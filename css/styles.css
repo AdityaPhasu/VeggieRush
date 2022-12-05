@@ -1,0 +1,230 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+p {
+  font-size: 1rem;
+  color: #8f8f8f;
+}
+
+em {
+  color: #F6FBF4;
+}
+
+/* CONTAINERS */
+.container-fluid {
+  padding: 5% 15%;
+}
+
+/* HEADING */
+.big-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #F6FBF4;
+}
+
+.section-heading {
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.feature-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 40px 0 30px 0;
+  line-height: 32px;
+}
+
+.about-heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #EDAB2D;
+}
+
+.big-heading-span {
+  text-decoration: underline;
+  text-decoration-color: #F7F8EC;
+  color: #79E058;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  padding-left: 1.3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  background-color: #D5F5B5;
+  text-decoration: underline;
+  color: #000;
+}
+
+/* DOWNLOAD BUTTONS */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* TITLE  */
+#title .container-fluid {
+  padding: 0;
+}
+
+.main {
+  position: relative;
+  text-align: center;
+}
+
+.main-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+}
+
+.title-img {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* FEATURES SECTION */
+#features .container-fluid {
+  padding: 0 10%;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.feature-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.icon {
+  color: #79E058;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #379237;
+}
+
+/* About */
+#about {
+  background-image: url("../images/crissxcross.png");
+  background-color: #047C44;
+  text-align: left;
+}
+
+#about p {
+  color: #F7F8EC;
+}
+
+/* MEMBERSHIP */
+#membership {
+  padding: 90px;
+  background-color: #fff;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-footer {
+  border-top: none;
+  background-color: #fff;
+}
+
+.card-button {
+  border: 1px solid black;
+}
+
+.card-button:hover, .card-button:active {
+  background-color: #D5F5B5;
+  text-decoration: underline;
+  color: #000;
+}
+
+.price-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+/* REVIEWS */
+#reviews {
+  background-image: url("../images/crissxcross.png");
+  background-color: #047C44;
+  height: 390px;
+}
+
+#reviews .container-fluid {
+  padding: 7% 15%;
+}
+
+.review-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #F6FBF4;
+}
+
+.review-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+/* FOOTER */
+#footer .container-fluid {
+  padding: 5% 0 2%;
+}
+
+.s-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 850px) {
+  body {
+    padding-top: 50px;
+  }
+
+  .big-heading {
+    font-size: 100%;
+  }
+
+  .download-button {
+    font-size: 1rem;
+  }
+}
