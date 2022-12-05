@@ -178,7 +178,7 @@ em {
 
 .price-text {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -223,7 +223,7 @@ em {
   margin: 20px 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   body {
     padding-top: 50px;
   }
@@ -232,8 +232,8 @@ em {
     font-size: 1.2rem;
   }
 
-  .download-button {
-    margin: 3%;
+  .hidden {
+    display: none;
   }
 
   .review-text {
