@@ -1,3 +1,12 @@
+$(document).ready(function() {
+  if ($(window).width() < 768) {
+
+    $(".download-button").removeClass(".btn-lg");
+    $(".download-button").addClass(".btn-sm");
+  }
+});
+
+
 $('.fa-earth-asia').hover(
   function() {
     $(this).addClass('fa-spin');
