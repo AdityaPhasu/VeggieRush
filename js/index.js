@@ -1,11 +1,4 @@
-$(document).ready(function() {
-  if ($(window).width() < 768) {
-
-    $(".download-button").removeClass(".btn-lg");
-    $(".download-button").addClass(".btn-sm");
-  }
-});
-
+// Feature-section icon animations
 
 $('.fa-earth-asia').hover(
   function() {
