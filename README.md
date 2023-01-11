@@ -1,2 +1,5 @@
 # VeggieRush
-My first product landing page!
+
+my first product landing page made using bootstrap!
+
+
