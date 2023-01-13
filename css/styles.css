@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -25,7 +26,6 @@ em {
 .big-heading {
   font-family: 'Poppins', sans-serif;
   font-size: 3.2rem;
-  line-height: 1.5;
   font-weight: 400;
   color: #F6FBF4;
 }
@@ -34,21 +34,18 @@ em {
   text-decoration: underline;
   font-family: "Poppins", sans-serif;
   font-size: 3rem;
-  line-height: 1.5;
 }
 
 .feature-heading {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  padding: 40px 0 30px 0;
-  line-height: 32px;
+  padding: 2.5rem 0 1.8rem 0;
 }
 
 .about-heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.4rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #F7F8EC;
 }
 
@@ -67,13 +64,14 @@ em {
 }
 
 .nav-item {
-  padding: 0 10px;
+  padding: 0 0.6rem;
 }
 
 .nav-link {
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 400; 
+  position: relative;
 }
 
 .nav-link:hover {
@@ -149,7 +147,7 @@ em {
 
 /* MEMBERSHIP */
 #membership {
-  padding: 90px;
+  padding: 5rem;
   background-color: #fff;
 }
 
@@ -207,7 +205,7 @@ em {
 .review-img {
   width: 10%;
   border-radius: 100%;
-  margin: 10px;
+  margin: 0.6rem;
 }
 
 /* FOOTER */
@@ -215,13 +213,19 @@ em {
   padding: 5% 0 2%;
 }
 
+#footer .container-fluid a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .s-icon {
-  margin: 20px 10px;
+  margin: 1.25rem 0.6rem;
 }
 
 @media (max-width: 750px) {
   body {
-    padding-top: 50px;
+    padding-top: 3.125rem;
   }
 
   .big-heading {
@@ -233,7 +237,7 @@ em {
   }
 
   .review-text {
-    padding-top: 15%;
+    padding-top: 5rem;
     font-size: 1.2rem;
   }
 }
