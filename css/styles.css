@@ -2,6 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   text-align: center;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +17,8 @@ p {
 em {
   color: #F6FBF4;
 }
+
+
 
 /* CONTAINERS */
 .container-fluid {
@@ -72,6 +75,7 @@ em {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 
   position: relative;
+  border-radius: 10px;
 }
 
 .nav-link:hover {
@@ -83,6 +87,10 @@ em {
 /* DOWNLOAD BUTTONS */
 .download-button {
   margin: 5% 3% 5% 0;
+}
+
+.btn,.nav-link{
+  transition: background-color 0.4s ease-out;
 }
 
 /* TITLE  */
