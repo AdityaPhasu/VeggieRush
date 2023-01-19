@@ -1,8 +1,33 @@
+:root{
+  --green: #79E058;
+  --light-green: #D5F5B5;
+  --dark-green: #047C44;
+  --grey: #8f8f8f;
+  --white: #fff;
+  --whitish-grey: #F6FBF4;
+  --whitish-grey2: #F7F8EC;
+  --black: #000;
+  --font-family1: 'Poppins', sans-serif;
+  --font-family2: 'Montserrat', sans-serif;
+  --font-family3: 'Source Sans Pro', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  font-family: var(--font-family2);
   line-height: 1.5;
   text-align: center;
+}
 
+img{
+  display: block;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,59 +36,111 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 1rem;
-  color: #8f8f8f;
+  color: var(--grey);
 }
 
 em {
-  color: #F6FBF4;
+  color: var(--whitish-grey);
 }
 
+a, a:hover{
+  text-decoration: none;
+  color: inherit;
+}
 
+h1, h2, h3, h4, h5, h6, p, em {
+  overflow-wrap: break-word;
+}
+
+/* TYPOGRAPHY */
+
+.big-heading,
+.feature-heading,
+.membership-heading,
+.navbar-brand{
+  font-family: var(--font-family1);
+}
+
+.about-heading,
+.feature-title,
+.price-text,
+.review-text{
+  font-family: var(--font-family3);
+}
+
+.big-heading,
+.nav-link{
+  font-weight: 400;
+}
+
+.feature-heading,
+.feature-title,
+.review-text,
+.navbar-brand
+{
+  font-weight: 600;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
 
 /* CONTAINERS */
+
 .container-fluid {
   padding: 5% 15%;
 }
+#title .container-fluid {
+  padding: 0;
+}
+#features .container-fluid {
+  padding: 0 10%;
+}
+#reviews .container-fluid {
+  padding: 7% 15%;
+}
+#footer .container-fluid {
+  padding: 5% 0 2%;
+}
 
-/* HEADING */
+/* HEADINGS */
+
 .big-heading {
-  font-family: 'Poppins', sans-serif;
   font-size: 3.2rem;
-  font-weight: 400;
-  color: #F6FBF4;
-}
-
-.section-heading {
-  text-decoration: underline;
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-}
-
-.feature-heading {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  padding: 2.5rem 0 1.8rem 0;
-}
-
-.about-heading {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2.4rem;
-  margin-bottom: 1.25rem;
-  color: #F7F8EC;
+  color: var(--whitish-grey);
 }
 
 .big-heading-span {
   text-decoration: underline;
-  text-decoration-color: #F7F8EC;
-  color: #79E058;
+  text-decoration-color: var(--whitish-grey2);
+  color: var(--green);
+}
+
+.feature-heading {
+  padding: 2.5rem 0 1.8rem 0;
+}
+
+.about-heading {
+  font-size: 2.4rem;
+  margin-bottom: 1.25rem;
+  color: var(--whitish-grey2);
+}
+
+.membership-heading {
+  text-decoration: underline;
+  font-size: 3.2rem;
 }
 
 /* NAVBAR */
 .navbar-brand {
   padding-left: 1.3rem;
-  font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .nav-item {
@@ -72,16 +149,14 @@ em {
 
 .nav-link {
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400; 
   position: relative;
   border-radius: 10px;
 }
 
 .nav-link:hover {
-  background-color: #D5F5B5;
+  background-color: var(--light-green);
   text-decoration: underline;
-  color: #000;
+  color: var(--black);
 }
 
 /* DOWNLOAD BUTTONS */
@@ -89,14 +164,12 @@ em {
   margin: 5% 3% 5% 0;
 }
 
-.btn,.nav-link{
+.btn,
+.nav-link{
   transition: background-color 0.4s ease-out;
 }
 
 /* TITLE  */
-#title .container-fluid {
-  padding: 0;
-}
 
 .main {
   position: relative;
@@ -112,29 +185,22 @@ em {
 
 .title-img {
   padding: 0;
-  display: block;
   margin: 0 auto;
   max-height: 100%;
-  max-width: 100%;
 }
 
 /* FEATURES SECTION */
-#features .container-fluid {
-  padding: 0 10%;
-}
 
 .feature-box {
   padding: 5%;
 }
 
 .feature-title {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
   font-size: 1.5rem;
 }
 
 .icon {
-  color: #79E058;
+  color: var(--green);
   margin-bottom: 1rem;
 }
 
@@ -145,18 +211,18 @@ em {
 /* About */
 #about {
   background-image: url("../images/crissxcross.png");
-  background-color: #047C44;
+  background-color: var(--dark-green);
   text-align: left;
 }
 
 #about p {
-  color: #F7F8EC;
+  color: var(--whitish-grey2);
 }
 
 /* MEMBERSHIP */
 #membership {
   padding: 5rem;
-  background-color: #fff;
+  background-color: var(--white) ;
 }
 
 .card {
@@ -165,23 +231,20 @@ em {
 
 .card-footer {
   border-top: none;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .card-button {
-  border: 1px solid black;
+  border: 1px solid var(--black);
 }
 
 .card-button:hover, .card-button:active {
-  background-color: #D5F5B5;
-  text-decoration: underline;
-  color: #000;
+  background-color: var(--light-green);
+  color: var(--black);
 }
 
 .price-text {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 2rem;
-  line-height: 1.5;
 }
 
 .pricing-col {
@@ -191,11 +254,7 @@ em {
 /* REVIEWS */
 #reviews {
   background-image: url("../images/crissxcross.png");
-  background-color: #047C44;
-}
-
-#reviews .container-fluid {
-  padding: 7% 15%;
+  background-color: var(--dark-green);
 }
 
 .carousel-inner {
@@ -203,49 +262,39 @@ em {
 }
 
 .review-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  height: 100%;
   font-size: 1.8rem;
-  line-height: 1.5;
-  color: #F6FBF4;
+  color: var(--whitish-grey);
 }
 
 .review-img {
+  display: inline-block;
   width: 10%;
   border-radius: 100%;
   margin: 0.6rem;
 }
 
 /* FOOTER */
-#footer .container-fluid {
-  padding: 5% 0 2%;
-}
-
-#footer .container-fluid a{
-  text-decoration: none;
-  color: inherit;
-}
-
-
 .s-icon {
   margin: 1.25rem 0.6rem;
 }
+
+/* MEDIA QUERIES */
 
 @media (max-width: 750px) {
   body {
     padding-top: 3.125rem;
   }
 
-  .big-heading {
-    font-size: 1.2rem;
-  }
-
   .hidden {
     display: none;
   }
 
+  .review-text,
+  .big-heading{
+    font-size: 1.2rem;
+  }
+
   .review-text {
     padding-top: 5rem;
-    font-size: 1.2rem;
   }
 }
