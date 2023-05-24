@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # VeggieRush
 
 ## Product-landing Page
@@ -31,3 +32,7 @@ This project is focused on creating a greengrocer website promoting its app. The
 ### What I learned
 
 How to use Bootstrap and its various features to build a responsive website
+=======
+# veggierush
+VeggieRush Landing Page
+>>>>>>> 24dc1e77d810d7f2b546a8f061f2fed0175cdcf6
