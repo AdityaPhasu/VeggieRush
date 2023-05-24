@@ -1,8 +1,6 @@
 # VeggieRush
 
-## Product-landing Page
-
-This project is focused on creating a greengrocer website promoting its app. The goal is to provide a convenient online space for people to buy fresh fruits and vegetables.
+A greengrocer landing page🥦🥬🍆
 
 ## Table of contents
 
